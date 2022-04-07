@@ -15,7 +15,7 @@ export default function Room(props) {
         else{
              props.room.products[event].color = 'red'
         }
-        if(sswitch == false){
+        if(sswitch === false){
             setSswitch(true);
         }else{
             setSswitch(false);
@@ -24,7 +24,7 @@ export default function Room(props) {
     };
 
     const changeDisplayComponent = () =>{
-        if(displayComponent == true){
+        if(displayComponent === true){
             setDisplayComponent(false);
         }
         else{
@@ -33,7 +33,7 @@ export default function Room(props) {
     }
 
     const showProductComponent = () =>{
-        if(displayComponent == false){
+        if(displayComponent === false){
             return null;
         }
         else{

@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import AddRoom from './pages/AddRoom';
 import Room from './pages/Room';

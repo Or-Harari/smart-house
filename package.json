@@ -2,7 +2,7 @@
   "name": "smart-house",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://or-harari.github.io.Or-Harari.github.io",
+  "homepage": "https://Or-Harari.github.io",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.3",

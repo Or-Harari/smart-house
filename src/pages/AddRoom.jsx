@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './AddRoom.css'
-import { SketchPicker, GithubPicker } from 'react-color';
+import { GithubPicker } from 'react-color';
 
 export default function AddRoom(props) {
 
@@ -12,11 +12,11 @@ export default function AddRoom(props) {
 
     const addRooms = ()=>{
       
-        if(roomName == null || roomColor == null){
+        if(roomName === null || roomColor === null){
             alert('Please make sure to fill name and color')
             return null;
         }
-        else if(roomType == null){
+        else if(roomType === null){
             alert('please choose a room')
             return null;
         }

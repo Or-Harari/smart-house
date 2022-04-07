@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Homepage.css'
 
 export default function Homepage(props) {
-
 
     const setRoom = index =>event =>{
         props.setRoom(index);

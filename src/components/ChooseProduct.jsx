@@ -10,7 +10,7 @@ export default function ChooseProduct(props) {
     }
 
     const showProducts = () => {
-        if(props.room.roomType == 'Bathroom'){
+        if(props.room.roomType === 'Bathroom'){
             return(
                 <select defaultValue={'default'} onChange={(element) => {handleProduct(element.target.value)}} id='select' name="">
                 <option value={'default'} disabled='disabled' >choose a product</option>
@@ -34,13 +34,13 @@ export default function ChooseProduct(props) {
     }
 
     const addProduct = () =>{
-        if(props.room.products.length == 5 || product == null){
+        if(props.room.products.length === 5 || product === null){
             props.changeDisplayComponent(false);
             return alert('Error');
         }
-        if(product == 'Stereo'){
+        if(product === 'Stereo'){
             let stereoCount = props.room.getStereoCount();
-            if( stereoCount == 1){
+            if( stereoCount === 1){
                 props.changeDisplayComponent(false);
                 return alert('Only 1 stereo can be added to a room')
             }
@@ -51,10 +51,6 @@ export default function ChooseProduct(props) {
             color:'red'
         }
         props.room.pushProduct(productObj);
-        props.changeDisplayComponent();
-    }
-
-    const closeComponent = () => {
         props.changeDisplayComponent();
     }
 
