@@ -7,7 +7,6 @@ import { useState } from 'react';
 
 function App() {
 
-
   const [roomsArray, setRoomsArray] = useState([]);
   const [chosenRoom, setChosenRoom] = useState();
 
@@ -31,7 +30,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-
     </div>
   );
 }

@@ -4,7 +4,6 @@ import './Room.css'
 
 export default function Room(props) {
 
-
     const [displayComponent, setDisplayComponent] = useState(false);
     const [sswitch, setSswitch] = useState(false);
     
@@ -19,8 +18,7 @@ export default function Room(props) {
             setSswitch(true);
         }else{
             setSswitch(false);
-        }
-        
+        }     
     };
 
     const changeDisplayComponent = () =>{
@@ -65,6 +63,5 @@ export default function Room(props) {
 
       <div>{showProductComponent()}</div>
     </div>
-    
   )
 }

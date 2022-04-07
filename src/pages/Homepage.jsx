@@ -10,12 +10,10 @@ export default function Homepage(props) {
   return (
     <div >
         <div className='main-div'>
-      
             {props.rooms.map((room, index)=> {
                 return(
                 <div key={index} className='roomsList'>
-                   <Link to={room.roomPath}><button className='rooms-button' style={{backgroundColor:room.roomColor}} onClick={setRoom(index)}>{room.roomName}</button></Link> 
-                   
+                   <Link to={room.roomPath}><button className='rooms-button' style={{backgroundColor:room.roomColor}} onClick={setRoom(index)}>{room.roomName}</button></Link>  
                 </div>
             )})}
             <div>

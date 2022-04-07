@@ -67,9 +67,7 @@ export default function AddRoom(props) {
                     </div>
             </li>
             <div className='button-div'><Link to='/'><button className='room-button' onClick={addRooms}>Add Room</button></Link></div>
-
         </ul>
-     
         </form>
     </div>
   )
